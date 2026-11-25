@@ -7,7 +7,7 @@
 export const CFG = {
   brand: 'KS Technologys',
   domain: 'kstechnologys.com',              // TODO: agar domain alag hai
-  email: '@kstechnologys.com',              // TODO: real email (contact form yahin aayega)
+  email: 'shailesh97218542@gmail.com',              // TODO: real email (contact form yahin aayega)
   phone: '+91 9721854225',                  // TODO
   wa: '9721854225',                         // TODO: WhatsApp number, country code ke saath, + ke bina
   address: 'India (remote-first team)',      // TODO

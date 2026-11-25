@@ -1,0 +1,44 @@
+import { j as e, a as t, S as n, L as s } from "./index-r-CXvy_H.js";
+function o() {
+  return e.jsxs(t, {
+    children: [
+      e.jsx(n, {
+        path: "/404",
+        title: "Page not found",
+        desc: "This page does not exist.",
+      }),
+      e.jsxs("div", {
+        className: "narrow text-center",
+        children: [
+          e.jsx("h1", { children: "This page does not exist." }),
+          e.jsx("p", {
+            className: "lead mx-auto",
+            children:
+              "The link may be old or mistyped. Try one of these instead.",
+          }),
+          e.jsxs("div", {
+            className: "btn-row justify-center",
+            children: [
+              e.jsx(s, {
+                className: "btn btn-primary",
+                to: "/",
+                children: "Home",
+              }),
+              e.jsx(s, {
+                className: "btn btn-ghost",
+                to: "/services",
+                children: "Services",
+              }),
+              e.jsx(s, {
+                className: "btn btn-ghost",
+                to: "/contact",
+                children: "Contact",
+              }),
+            ],
+          }),
+        ],
+      }),
+    ],
+  });
+}
+export { o as default };
