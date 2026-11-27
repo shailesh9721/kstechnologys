@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /thank-you
 
-Sitemap: https://kstechnologys.com/sitemap.xml
+Sitemap: https://kstechnologys.in/sitemap.xml
