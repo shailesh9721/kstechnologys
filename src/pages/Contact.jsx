@@ -30,10 +30,14 @@ export default function Contact() {
     if (Object.keys(er).length) return
     setStatus('sending')
     try {
-      const r = await fetch(`https://formsubmit.co/ajax/${CFG.email}`, {
-        method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ ...v, _subject: `New enquiry from ${CFG.domain}`, _captcha: 'false', _template: 'table' }),
-      })
+     const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000'; // डेवलपमेंट के लिए
+
+const r = await fetch(`${API_URL}/api/contact`, {
+  method: 'POST', 
+  headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+  body: JSON.stringify(v) // अब हम सीधा डेटा भेज रहे हैं
+}),
+      
       if (!r.ok) throw new Error('failed')
       nav('/thank-you')
     } catch { setStatus('error') }
